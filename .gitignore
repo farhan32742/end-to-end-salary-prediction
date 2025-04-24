@@ -1,0 +1,38 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.shared_enviroment/
+.shared_env/
+*.egg-info/
+
+# Distribution builds
+build/
+dist/
+artifacts/
+logs/
+mlruns/
+dataset/
+*.egg
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEs/editors
+.vscode/
+.idea/
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables or local config
+.env
+*.env
