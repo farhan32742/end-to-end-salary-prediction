@@ -1,5 +1,6 @@
 import sys
 import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 import pandas as pd
 import numpy as np
 from dataclasses import dataclass
@@ -55,7 +56,7 @@ class DataTransformation:
             df = pd.read_csv(raw_data_path)
             logging.info("Data loaded successfully")
 
-            df.dropna(inplace=True)
+            df.drop(columns=['FIRST NAME', 'LAST NAME','LEAVES USED'], inplace=True)
             df['DOJ'] = pd.to_datetime(df['DOJ'])
             df['CURRENT DATE'] = pd.to_datetime(df['CURRENT DATE'])
             df['Total_time_in_company'] = ((df['CURRENT DATE'] - df['DOJ']).dt.days / 30).astype(int)
