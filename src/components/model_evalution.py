@@ -12,7 +12,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from src.logger.logging import logging
 from src.exception.exception import CustomException
 
-mlflow.set_experiment("mlops_with_sunny")
+mlflow.set_experiment("Salary prediction")
 #below line is used to set the tracking uri for local mlflow server
 #mlflow.set_tracking_uri("https://127.0.0.1:5000")
 class ModelEvaluation:
