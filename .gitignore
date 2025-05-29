@@ -16,7 +16,6 @@ dist/
 artifacts/
 logs/
 mlruns/
-dataset/
 *.egg
 *.egg-info/
 .eggs/

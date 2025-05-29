@@ -1,0 +1,5 @@
+outs:
+- md5: 3a5ab79f442fa5881837d07c9e5cf8a2
+  size: 196625
+  hash: md5
+  path: Salary Prediction of Data Professions.csv

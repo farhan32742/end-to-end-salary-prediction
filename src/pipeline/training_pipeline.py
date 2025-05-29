@@ -28,8 +28,6 @@ print(train_data_path)
 print(test_data_path)
 data_transformation=DataTransformation()
 train_arr,test_arr=data_transformation.initiate_Data_Transformation(train_data_path,test_data_path)
-print(train_arr)
-print("hello g ")
 model_trainer_obj=ModelTrainer()
 model_trainer_obj.initiate_Model_trainer(train_arr,test_arr)
 
